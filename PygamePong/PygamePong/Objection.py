@@ -81,7 +81,7 @@ class Ball(): # is the ball
     def update(self, window):
         window.blit(self.screen, (self.rect.x, self.rect.y))
 
-class Top():
+class Top(): # is the top hitbox
     def __init__(self):
         self.rect = pygame.Rect(0,0,800,5) #width, lenth
         self.screen = pygame.Surface((self.rect.width, self.rect.height))
@@ -89,7 +89,7 @@ class Top():
     def update(self, window):
         window.blit(self.screen, (self.rect.x, self.rect.y))
 
-class Bottom():
+class Bottom(): #is the bottom hitbox
     def __init__(self):
         self.rect = pygame.Rect(0,395,800,5) #width, lenth
         self.screen = pygame.Surface((self.rect.width, self.rect.height))
